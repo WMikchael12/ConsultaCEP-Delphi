@@ -1,0 +1,14 @@
+program ConsultaCorreios;
+
+uses
+  Vcl.Forms,
+  uConsultaCorreios in 'View\uConsultaCorreios.pas' {FrmConsultaCorreios};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TFrmConsultaCorreios, FrmConsultaCorreios);
+  Application.Run;
+end.
